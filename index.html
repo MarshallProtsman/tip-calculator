@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+	<link
+	  rel="icon"
+	  type="image/png"
+	  sizes="32x32"
+	  href="./images/favicon-32x32.png"
+	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="/style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+	<title>Frontend Mentor | Tip calculator app</title>
 
-  Bill
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+	  .attribution {
+		font-size: 11px;
+		text-align: center;
+	  }
+	  .attribution a {
+		color: hsl(228, 45%, 44%);
+	  }
+	</style>
+  </head>
+  <body>
+	<img id="logo" src="images/logo.svg" alt="splitter logo" />
+	<div class="card">
+	  <h4>Bill</h4>
+	  <h4>Select Tip %</h4>
+	  <div class="selections">
+		<a href="" class="button">5%</a>
+		<a href="" class="button">10%</a>
+		<a href="" class="button">15%</a>
+		<a href="" class="button">25%</a>
+		<a href="" class="button">50%</a>
+		<input type="text" label="Custom" />Number of People
+		<input type="text" />
+	  </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+	  <div class="results">
+		<div class="result-display">
+		  <div class="category">
+			<h4>Tip Amount</h4>
+			<p>/ person</p>
+		  </div>
+		  <h2 id="tip-ammount-result">$4.27</h2>
+		</div>
+		<div class="result-display">
+		  <div class="category">
+			<h4>Total Amount</h4>
+			<p>/ person</p>
+		  </div>
+		  <h2 id="tip-ammount-result">$4.27</h2>
+		</div>
+		<a class="button">Reset</a>
+	  </div>
+	</div>
 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Marshall Protsman</a>.
-  </div>
-</body>
+	<div class="attribution">
+	  Challenge by
+	  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+		>Frontend Mentor</a
+	  >. Coded by <a href="#">Marshall Protsman</a>.
+	</div>
+  </body>
 </html>
